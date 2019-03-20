@@ -20,7 +20,7 @@ Here is a simple example to move camera lens up and stop after 1s.
 
 .. code:: python
 
-    from pyfoscam import FoscamCamera
+    from libpyfoscam import FoscamCamera
     from time import sleep
 
     mycam = FoscamCamera('192.168.0.113', 88, 'admin', 'superuser')
@@ -50,7 +50,7 @@ This example illustrates the use of a callback function when the command complet
 
 .. code:: python
 
-    from pyfoscam import FoscamCamera, FOSCAM_SUCCESS
+    from libpyfoscam import FoscamCamera, FOSCAM_SUCCESS
     def print_ipinfo(returncode, params):
         if returncode != FOSCAM_SUCCESS:
             print 'Failed to get IPInfo!'

@@ -7,7 +7,7 @@ try:  # PY3
 except ImportError:
     from ConfigParser import SafeConfigParser as ConfigParser
 
-from pyfoscam.foscam import FoscamCamera, FOSCAM_SUCCESS
+from libpyfoscam.foscam import FoscamCamera, FOSCAM_SUCCESS
 
 config = ConfigParser()
 config_filepath = os.path.join(os.path.dirname(__file__), 'camtest.cfg')
