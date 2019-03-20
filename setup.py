@@ -25,7 +25,7 @@ CLASSIFIERS = [
 
 setup(
     name='pyfoscam',
-    version='1.0',
+    version='2.0',
     description='Python Library for Foscam IP Cameras',
     long_description=open('README.rst', 'r').read(),
     author='Viswanathan S',
