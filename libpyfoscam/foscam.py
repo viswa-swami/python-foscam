@@ -595,13 +595,25 @@ class FoscamCamera(object):
                                     callback=callback
                                    )
 
-    def get_ptz_preset_point_list(self, callback=None):
+    def ptz_zoom_in(self, callback=None):
         '''
-        Get the preset list.
+        Zoom In.
         '''
-        return self.execute_command('getPTZPresetPointList', {}, callback=callback)
+        return self.execute_command('zoomIn', {}, callback=callback)
 
 
+    def ptz_zoom_out(self, callback=None):
+        '''
+        Move to bottom right.
+        '''
+        return self.execute_command('zoomOut', callback=callback)
+
+    def ptz_zoom_stop(self, callback=None):
+        '''
+        Stop run PT
+        '''
+        return self.execute_command('zoomStop', callback=callback)
+    
     # *************** AV Function *******************
     def get_motion_detect_config(self, callback=None):
         '''
