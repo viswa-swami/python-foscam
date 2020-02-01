@@ -599,7 +599,7 @@ class FoscamCamera(object):
         '''
         Zoom In.
         '''
-        return self.execute_command('zoomIn', {}, callback=callback)
+        return self.execute_command('zoomIn', callback=callback)
 
 
     def ptz_zoom_out(self, callback=None):
